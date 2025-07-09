@@ -13,5 +13,16 @@ UCLASS()
 class HW06_API ARotationActor : public ABaseActor
 {
 	GENERATED_BODY()
+
+
+public:
+	ARotationActor();
+
+
+private:
+
+	virtual void Tick(float DeltaTime) override;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Rotation")
+	float RotationSpeed;
 	
 };

@@ -12,15 +12,14 @@ class HW06_API ABaseActor : public AActor
 	GENERATED_BODY()
 	
 public:	
-	// Sets default values for this actor's properties
 	ABaseActor();
 
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Mesh")
+	UStaticMeshComponent* Mesh;  // 메쉬 컴포넌트는 액터의 시각적 표현을 담당합니다.
 
 public:	
-	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 };
