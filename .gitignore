@@ -1,0 +1,17 @@
+# 프로젝트 빌드 및 캐시 파일 제외
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+*.sln
+*.VC.db
+
+# MacOS 파일 무시
+.DS_Store
+
+# 유니티 또는 기타 IDE 캐시도 무시
+*.user
+*.suo
+*.opensdf
+*.log
