@@ -19,7 +19,7 @@ public:
 	ARotationActor();
 
 
-private:
+protected:	
 
 	virtual void Tick(float DeltaTime) override;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Rotation")
